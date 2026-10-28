@@ -51,3 +51,6 @@ Edit `src/portfolioData.ts`. It contains the profile, education, skills, project
 - Titles are cleaned from the provided filenames; blank issuer/date fields are left blank rather than guessed. Review the displayed names and update them in `src/portfolioData.ts` if a certificate's exact title should be different.
 - One supplied file is an `.mhtml` web archive; it is listed with a preview card, but browser support for opening MHTML varies. The original file is included.
 - Theme choice is stored in the browser's local storage.
+## Deployment
+
+The portfolio is configured as a Vite static site. For a connected Vercel project, pushing commits to the production branch (`main`) triggers a new deployment automatically. Build command: `npm run build`; output directory: `dist`.
